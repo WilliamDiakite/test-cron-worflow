@@ -8,9 +8,18 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4    
+        with:
+          ref: fetch
+          persist-credentials: true
 
       - name: Run container
         run: docker compose run --rm --build app
+
+      - name: Checkout main
+        run: |
+          git fetch origin main
+          git checkout main
+          git pull
 
       - name: Commit changes
         run: |
@@ -18,5 +27,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add ./output/output.txt
           git commit -m "Update ping log [skip ci]" || echo "No changes to commit"
-          git push
+          git push origin main
 
