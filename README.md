@@ -1,4 +1,4 @@
-# Use github actions to version your dataset
+# Using GitHub Actions to Version Your Dataset
 
 This template repo is used to demonstrate how one could use Github Actions to create a versionned dataset.
 
@@ -29,6 +29,6 @@ With GitHub Actions, we can automate the process of fetching data from the fetch
 
 This creates a fully automated, versioned dataset without manual intervention. 
 
-## Updating permissions
+## Updating write (push) permissions
 
 ...
