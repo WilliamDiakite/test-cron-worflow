@@ -4,6 +4,8 @@ This template repo is used to demonstrate how one could use Github Actions to cr
 
 Versions (or backups) are periodically done in automated thanks to *cron* jobs.
 
+> For it to properly work, the workflow needs to be comitted on the `main` branch. Otherwise, it doesn't seem possible to trigger `workflow_dispatch` or `schedule: cron`
+
 ## Fetch routine
 
 In this template, it is assumed that you're data is available somewhere locally or online and requires some kind fetch routine to be accessed. In our case, this routine will be encapsulated in a [Docker](https://docs.docker.com/get-started/docker-overview/) container which allow to reuse the same environement to run the routine, drastically decreasing the risk of facing errors due to missing dependencies. 
