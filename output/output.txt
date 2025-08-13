@@ -4,3 +4,8 @@ PING www.reddit.com (151.101.41.140): 56 data bytes
 --- www.reddit.com ping statistics ---
 5 packets transmitted, 0 packets received, 100% packet loss
 
+PING www.reddit.com (146.75.29.140): 56 data bytes
+
+--- www.reddit.com ping statistics ---
+5 packets transmitted, 0 packets received, 100% packet loss
+
