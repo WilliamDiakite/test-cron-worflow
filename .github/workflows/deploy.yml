@@ -8,14 +8,8 @@ jobs:
       - name: Run
         uses: actions/checkout@v4    
 
-      - name: build docker image
-        uses: docker build -t app .
-
       - name: run scripts
-        uses: docker run \
-          --rm app \
-          -v ${{ github.workspace }}/output:/app/output \
-          ping -c 4 reddit.com >> ./output/output.txt
+        uses: docker compose run --rm --build app
 
       - name: Commit changes
         run: |
