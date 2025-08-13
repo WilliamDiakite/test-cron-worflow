@@ -23,7 +23,7 @@ jobs:
 
       - name: Copy data to main
         run: |
-          cp ./output/output.tx /tmp/main/output/output.txt
+          cp ./output/output.txt /tmp/main/output/output.txt
 
       - name: Commit changes
         run: |
