@@ -3,7 +3,8 @@ on:
     
 jobs:
   update-history:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
+    name: Update file history
     steps:
       - name: Run
         uses: actions/checkout@v4    
