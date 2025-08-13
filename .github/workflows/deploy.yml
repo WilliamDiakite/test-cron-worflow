@@ -28,6 +28,7 @@ jobs:
       - name: Commit changes
         run: |
           cd /tmp/main
+          git switch -c main origin/main # creates a local branch main at HEAD origin/main@
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add ./output/output.txt
